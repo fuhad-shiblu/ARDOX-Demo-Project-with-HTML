@@ -1,0 +1,14 @@
+@media (max-width: 575.98px) {
+    .botImg{
+        display: none;
+    }
+    form .formTextTwo::before{
+        content: '';
+        width: 11px;
+        background: #000;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+    }
+}

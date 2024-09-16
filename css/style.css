@@ -1,0 +1,189 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+/*===== Common CSS Part Start =====*/
+a{
+    text-decoration: none;
+}
+ul , ol{
+    list-style: none;
+}
+:root{
+    --Roboto: "Roboto", sans-serif;
+    --Inter: "Inter", sans-serif;
+}
+/*===== Common CSS Part End =====*/
+
+/*===== Navbar CSS Part Start =====*/
+nav{
+    width: 100%;
+    min-height: 100vh;
+    background: url(../img/bg.png);
+    background-position: center;
+    background-size: cover;
+    padding-top: 39px;
+}
+.logo img{
+    width: 99px;
+    display: flex;
+}
+.btn{
+    display: flex;
+    gap: 43px;
+    justify-content: end;
+    
+}
+.btn a{
+    width: 81px;
+    height: 39px;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: var(--Roboto);
+    color: #000000;
+    line-height: 39px;
+    border-radius: 18px;
+    position: relative;
+    transition: all linear .1s;
+}
+.btn a::after{
+    content: '';
+    width: 20px;
+    height: 1px;
+    background: #000000;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+}
+.btn a:hover{
+    color: #ffffff;
+    background: #000000;
+}
+/*===== Navbar CSS Part End =====*/
+
+/*===== Navbar CSS Part Start =====*/
+#botForm{
+    margin-top: 180px;
+}
+.botImg img{
+    width: 587px;
+}
+.inputForm{
+    display: flex;
+    justify-content: end;
+}
+form{
+    width: 372px;
+}
+form h1{
+    font-size: 36px;
+    font-weight: 600;
+    font-family: var(--Roboto);
+    color: #000;
+    text-align: center;
+}
+form h1 span{
+    display: block;
+}
+input{
+    width: 100%;
+    padding: 18px 0 17px 25px;
+    border: none;
+    outline: none;
+    margin-top: 55px;
+    border-radius: 8px;
+}
+input:hover{
+    border: 1px solid #000;
+}
+.passInput{
+    margin-top: 20px;
+}
+input::placeholder{
+    font-size: 22px;
+    font-weight: 300;
+    font-family: var(--Roboto);
+    color: #9A9A9A;
+}
+.formText a{
+    display: flex;
+    justify-content: end;
+    margin-top: 14px;
+    font-size: 18px;
+    font-weight: 200;
+    font-family: var(--Roboto);
+    color: #000;
+}
+form button{
+    width: 100%;
+    margin-top: 47px;
+    padding: 18px 17px;
+    outline: none;
+    border: none;
+    background: #050505;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 900;
+    font-family: var(--Roboto);
+    border-radius: 8px;
+    transition: all linear .1s;
+}
+form button:hover{
+    scale: 1.1;
+}
+form button:active{
+    scale: .9;
+}
+form .formTextTwo{
+    text-align: center;
+    margin-top: 35px;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: var(--Inter);
+    position: relative;
+}
+form .formTextTwo::before{
+    content: '';
+    width: 101px;
+    height: 1px;
+    background: #000;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+form .formTextTwo::after{
+    content: '';
+    width: 101px;
+    height: 1px;
+    background: #000;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+.socialIcons{
+    margin-top: 42px;
+    display: flex;
+    justify-content: space-between;
+}
+.socialIcons a{
+    width: 87px;
+    height: 52px;
+    background: #000;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all linear .1s;
+}
+.socialIcons a:hover{
+    scale: .9;
+}
+.socialIcons a:active{
+    scale: 1.1;
+}
+/*===== Navbar CSS Part End =====*/
